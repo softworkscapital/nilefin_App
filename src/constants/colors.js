@@ -1,0 +1,23 @@
+const COLORS = {
+  white: '#fff',
+  black: '#000',
+  blue: '#5D5FEE',
+  grey: '#BABBC3',
+  light: '#F3F4FB',
+  darkBlue: '#7978B5',
+  red: 'red',
+  egyptionblue: '#040B22',
+  coolgray: '#374151',
+  signed: '#1435AB',
+  link: '#0891B2',
+  login: '#1435AB',
+  blk: '#0D0D20',
+  orlines: '#C7C9D9',
+  ortext: '#6B7588',
+  neutral: '#6B778C',
+  cyan: '#0E7490',
+  cyanlight: '#CFFAFE',
+  othergray: '#6B7280',
+  btnblue: '#F0F2FA',
+};
+export default COLORS;

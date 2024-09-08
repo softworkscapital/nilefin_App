@@ -1,0 +1,283 @@
+<View style={{ width: "48%" }}>
+              <Text
+                style={{
+                  color: "#1435AB90",
+                  fontSize: 12,
+                  fontWeight: "500",
+                  alignSelf: "center",
+                }}
+              >
+                Purpose
+              </Text>
+              <TouchableOpacity
+                onPress={() => masterFilter("Purpose")}
+                style={{
+                  height: 32,
+                  width: "100%",
+                  backgroundColor: "#FFFFFF",
+                  borderRadius: 20,
+                  borderWidth: 1,
+                  borderColor: "#1435AB",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "row",
+                }}
+              >
+                {loanPurpose != "" && (
+                  <>
+                    <Text
+                      style={{
+                        color: "#1435AB",
+                        fontSize: 14,
+                        fontWeight: "500",
+                      }}
+                    >
+                      {loanPurpose}
+                    </Text>
+                    <AntDesign
+                      name="close"
+                      size={16}
+                      color={"#1435AB"}
+                      style={{ marginTop: 3, marginLeft: 7 }}
+                    />
+                  </>
+                )}
+              </TouchableOpacity>
+            </View>
+            <View style={{ width: "48%" }}>
+              <Text
+                style={{
+                  color: "#1435AB90",
+                  fontSize: 12,
+                  fontWeight: "500",
+                  alignSelf: "center",
+                }}
+              >
+                Term
+              </Text>
+              <TouchableOpacity
+                onPress={() => masterFilter("Term")}
+                style={{
+                  height: 32,
+                  width: "100%",
+                  backgroundColor: "#FFFFFF",
+                  borderRadius: 20,
+                  borderWidth: 1,
+                  borderColor: "#1435AB",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "row",
+                }}
+              >
+                {lowterm != 0 && highterm != 0 && (
+                  <>
+                    <Text
+                      style={{
+                        color: "#1435AB",
+                        fontSize: 14,
+                        fontWeight: "500",
+                      }}
+                    >
+                      {lowterm} - {highterm} Months
+                    </Text>
+                    <AntDesign
+                      name="close"
+                      size={16}
+                      color={"#1435AB"}
+                      style={{ marginTop: 3, marginLeft: 7 }}
+                    />
+                  </>
+                )}
+              </TouchableOpacity>
+            </View>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              marginTop: 10,
+              justifyContent: "space-between",
+            }}
+          >
+            <View style={{ width: "48%" }}>
+              <Text
+                style={{
+                  color: "#1435AB90",
+                  fontSize: 12,
+                  fontWeight: "500",
+                  alignSelf: "center",
+                }}
+              >
+                Intrest Rate
+              </Text>
+              <TouchableOpacity
+                onPress={() => masterFilter("Intrest")}
+                style={{
+                  height: 32,
+                  width: "100%",
+                  backgroundColor: "#FFFFFF",
+                  borderRadius: 20,
+                  borderWidth: 1,
+                  borderColor: "#1435AB",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "row",
+                }}
+              >
+                {lowintrest != 0 && highintrest != 0 && (
+                  <>
+                    <Text
+                      style={{
+                        color: "#1435AB",
+                        fontSize: 14,
+                        fontWeight: "500",
+                      }}
+                    >
+                      {lowintrest} - {highintrest} %
+                    </Text>
+                    <AntDesign
+                      name="close"
+                      size={16}
+                      color={"#1435AB"}
+                      style={{ marginTop: 3, marginLeft: 7 }}
+                    />
+                  </>
+                )}
+              </TouchableOpacity>
+            </View>
+            <View style={{ width: "48%" }}>
+              <Text
+                style={{
+                  color: "#1435AB90",
+                  fontSize: 12,
+                  fontWeight: "500",
+                  alignSelf: "center",
+                }}
+              >
+                Is Insured
+              </Text>
+              <TouchableOpacity
+                onPress={() => masterFilter("Insured")}
+                style={{
+                  height: 32,
+                  width: "100%",
+                  backgroundColor: "#FFFFFF",
+                  borderRadius: 20,
+                  borderWidth: 1,
+                  borderColor: "#1435AB",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "row",
+                }}
+              >
+                {insured != "" && (
+                  <>
+                    <Text
+                      style={{
+                        color: "#1435AB",
+                        fontSize: 14,
+                        fontWeight: "500",
+                      }}
+                    >
+                      {insured == "Insured" && "Insured"}
+                      {insured == "NotInsured" && "Not Insured"}
+                    </Text>
+                    <AntDesign
+                      name="close"
+                      size={16}
+                      color={"#1435AB"}
+                      style={{ marginTop: 3, marginLeft: 7 }}
+                    />
+                  </>
+                )}
+              </TouchableOpacity>
+            </View>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              marginTop: 10,
+              justifyContent: "space-between",
+            }}
+          >
+            <View style={{ width: "48%" }}>
+              <Text
+                style={{
+                  color: "#1435AB90",
+                  fontSize: 12,
+                  fontWeight: "500",
+                  alignSelf: "center",
+                }}
+              >
+                Amount Range
+              </Text>
+              <TouchableOpacity
+                onPress={() => masterFilter("Amount")}
+                style={{
+                  height: 32,
+                  width: "100%",
+                  backgroundColor: "#FFFFFF",
+                  borderRadius: 20,
+                  borderWidth: 1,
+                  borderColor: "#1435AB",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "row",
+                }}
+              >
+                {lowamnt != 0 && highamnt != 0 && (
+                  <>
+                    <Text
+                      style={{
+                        color: "#1435AB",
+                        fontSize: 14,
+                        fontWeight: "500",
+                      }}
+                    >
+                      ${lowamnt} - ${highamnt}
+                    </Text>
+                    <AntDesign
+                      name="close"
+                      size={16}
+                      color={"#1435AB"}
+                      style={{ marginTop: 3, marginLeft: 7 }}
+                    />
+                  </>
+                )}
+              </TouchableOpacity>
+            </View>
+            <View style={{ width: "48%" }}>
+              <Text
+                style={{
+                  color: "#FFFFFF",
+                  fontSize: 12,
+                  fontWeight: "500",
+                  alignSelf: "center",
+                }}
+              >
+                .
+              </Text>
+              <TouchableOpacity
+                onPress={() => masterFilter("All")}
+                style={{
+                  height: 32,
+                  width: "100%",
+                  backgroundColor: "#FFFFFF",
+                  borderRadius: 20,
+                  borderWidth: 1,
+                  borderColor: "red",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "row",
+                }}
+              >
+                <Text style={{ color: "red", fontSize: 14, fontWeight: "500" }}>
+                  Clear All
+                </Text>
+                <AntDesign
+                  name="close"
+                  size={16}
+                  color={"red"}
+                  style={{ marginTop: 3, marginLeft: 7 }}
+                />
+              </TouchableOpacity>
+            </View>

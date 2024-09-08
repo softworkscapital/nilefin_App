@@ -1,0 +1,31 @@
+    <View
+            style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
+            <View
+              style={{
+                flex: 1,
+                height: 5,
+                backgroundColor: 'red',
+                margin: 2,
+              }}></View>
+            <View
+              style={{
+                flex: 1,
+                height: 5,
+                backgroundColor: 'orange',
+                margin: 2,
+              }}></View>
+            <View
+              style={{
+                flex: 1,
+                height: 5,
+                backgroundColor: 'skyblue',
+                margin: 2,
+              }}></View>
+            <View
+              style={{
+                flex: 1,
+                height: 5,
+                backgroundColor: 'green',
+                margin: 2,
+              }}></View>
+          </View>
